@@ -10,27 +10,18 @@
 /* inicia header */
 header{
     background-color:#000000;
-    padding: 10px;
-    height: 60px;
+    min-height: 65px;
+    max-height:80px;
 }
 
-.menu{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.logo img{
-    position: absolute;
+.navbar-brand img{
     width: 50px;
     object-fit: cover;
 }
 
-.menu ul{
-    display: flex;
-}
 
-.menu-item {
-    padding: 5px;
+.nav-item {
+    gap: 5px;
 }
 .nav-link{
     color:#880f0f;
@@ -40,6 +31,8 @@ header{
     padding: 5px;
     background-color: aqua;
 }
+
+
 /* termina header */
 
 /* html inicio */

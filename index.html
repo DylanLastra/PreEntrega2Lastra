@@ -13,21 +13,30 @@
 </head>
 <body>
     <!--header-->
-    <header>       
-        <div class="logo">
-        <a href="index.html"><img src="assets/images/PRODUCCIONES-min.png" alt="logo de Focus Producciones"></a>
-            </div>
-        <nav class="menu">
-            <ul>
-                <li class="menu-item"><a href="index.html"class="nav-link">INICIO</a></li>
-                <li class="menu-item"><a href="pages/galeria.html"class="nav-link">GALERIA</a></li>
-                <li class="menu-item"><a href="pages/portafolio.html"class="nav-link">PORTAFOLIO</a></li>
-                <li class="menu-item"><a href="pages/experiencia.html"class="nav-link">EXPERIENCIA</a></li>
-                <li class="menu-item"><a href="pages/contacto.html"class="nav-link">CONTACTO</a></li>
-            </ul>
-        
-        </nav>
-        
+    <header>    
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="assets/images/PRODUCCIONES-min.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Focus Producciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item"><a href="index.html"class="nav-link active" aria-current="page">INICIO</a></li>
+                    <li class="nav-item"><a href="pages/galeria.html"class="nav-link">GALERIA</a></li>
+                    <li class="nav-item"><a href="pages/portafolio.html"class="nav-link">PORTAFOLIO</a></li>
+                    <li class="nav-item"><a href="pages/experiencia.html"class="nav-link">EXPERIENCIA</a></li>
+                    <li class="nav-item"><a href="pages/contacto.html"class="nav-link">CONTACTO</a></li>
+                  </div>
+                </div>
+              </div>
+          </nav>
+           
     </header>
         <!--main-->
     <main>
