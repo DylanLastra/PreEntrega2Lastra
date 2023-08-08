@@ -11,14 +11,12 @@
 header{
     background-color:#000000;
     min-height: 65px;
-    max-height:80px;
 }
 
 .navbar-brand img{
     width: 50px;
     object-fit: cover;
 }
-
 
 .nav-item {
     gap: 5px;
@@ -41,11 +39,13 @@ header{
 .caja-inicio {
     background-color: #718c76;
     text-align: center;
+    width: 100%;
 }
 .cajita{
     display: flex;
-    padding: 10px;
-    width: 98.2%;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
 }
 
 .cajita video{
@@ -67,7 +67,7 @@ header{
     font-size: 30px;
     text-align: center;
     color: #070606;
-    padding-top: 60px;
+    font-weight: bold;
 }
 .cajita div a{
     color: #880f0f;
@@ -80,6 +80,7 @@ header{
     background-color: #3874ad;
     padding: 30px;
     text-align: center;
+    display: flex;
 }
 
 .card-body img{
@@ -90,7 +91,6 @@ header{
 }
 
 .card-body{
-    display: inline-block;
     width: 25%;
     background-color: #bd3e3e;
     padding: 10px;
@@ -101,36 +101,40 @@ header{
 }
 /* colaboraciones*/
 .colaboraciones{
-    background-color: #6c78e1;
-    padding: 20px;
+    background-color: #dcdde3;
     text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
 }
-.colaboraciones h2{
+.colaboraciones div{
     font-size: 20px;
     text-align: center;
     color: #000000;
 }
-.colaboraciones h2 a{
+.colaboraciones div h2 a{
     color: #5963cc;
 }
 .samsung{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     margin: 5px;
     text-align: center;
+    gap: 10px;
 }
 
 .samsung img{
-    display: inline-block;
-    width: 40%;
+    align-items: center;
+    width: 50%;
     height: fit-content;
     object-fit: cover;
 }
 .samsung video{
-    width: 30%;
-    display: inline-block;
-    height: fit-content;
-    margin: 5px;
+    width: 60%;
+    height: 800px;
 }
 
 /*html galeria*/
@@ -229,14 +233,19 @@ header{
     background-size: cover;
     background-position: center;
     padding: 20px;
-    height: 376px;
+    min-height: 430px;
 }
 .main-contacto section {
-    margin:auto;
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+
+}
+.form div{
+    gap: 10px;
     background-color: #eeeeee;
-    margin-top: 20px;
-    padding: 20px;
 }
 .form input{
     width: 100%;
@@ -254,13 +263,13 @@ header{
 .footer-contacto {
     background-color: #000000;
     width: 100%;
-    height: 81px;
-    position: relative;
+    min-height: auto;
+    max-height: 110px;
 }
 .footer-contacto p{
     color: #eeeeee;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: bold;
     text-align: center
 }
 
@@ -276,4 +285,40 @@ footer p{
     font-size: 12px;
     font-weight: 700;
     text-align: center;
+}
+
+@media screen and (max-width:352px){
+    .cajita{
+        flex-direction: column-reverse;
+    gap: 5px;}
+        .cajita div{
+            align-self: flex-start;
+            padding: 10px;
+        }
+        .cajita div a{
+            align-self: center;
+            justify-self: center;
+        }
+}
+@media screen and (max-width:550px){
+    .cajita{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-body{
+        width: 100%;
+        background-color: #bd3e3e;
+        padding: 10px;
+        margin: 10px;
+    }
+    .samsung video{
+        width: 100%;
+        height: 300px;
+    }
 }
