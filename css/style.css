@@ -138,26 +138,30 @@ header{
 }
 
 /*html galeria*/
-.galeria{
-    background-color: #777b9f;
-    padding: 10px;
-    text-align: center
-}
-
-.fotos-galeria div img{
-    display: inline-block;
-    width: 30%;
-    height: 600px;
-    object-fit: cover;
-    margin: 5px;
-    border-radius: 2px;
-}
-.fotos-galeria{
-    display: inline-block;
-    width: 100%;
+.tittle-galeria{
+    background-color: #ffffff;
     text-align: center;
+    justify-content: center;
 }
-
+.tittle-galeria h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 28px;
+    font-weight:bold 
+}
+.carousel{
+    display: flex;
+    flex-direction: column;
+}
+.carousel-inner{
+    width: 60%;
+    align-self: center;
+    justify-self: center;
+    height: fit-content;
+}
+.carousel-item img{
+    object-fit: fill;
+}
 /* html portafolio*/
 .port{
     background-color: #ffffff;
