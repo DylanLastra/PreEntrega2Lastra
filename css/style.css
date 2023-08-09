@@ -159,50 +159,160 @@ header{
 }
 
 /* html portafolio*/
-/*cards*/
-.cards-logo, .cards-producto, .cards-film{
-    background-color: #f4f7fa;
-    padding: 30px;
+.port{
+    background-color: #ffffff;
     text-align: center;
-    font-size: 25px;
+    justify-content: center;
 }
-.card-logo img, .card-producto img, .card-film img{
-    width: 100%;
-    height: 150;
-    object-fit: cover;
-}
-.card-logo, .card-producto, .card-film {
-    display: inline-block;
-    width: 25%;
+.port h2{
+    text-align: center;
     padding: 10px;
-    margin: 10px;
+    font-size: 28px;
+    font-weight:bold ;
 }
+.grilla-logos{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'area1 area2 area3'
+    'area4 none area5';
+    background-color: #777b9f;
+    align-content: center;
 
+}
+.l1{
+    grid-area: area1;
+}
+.p1{
+    grid-area: area1;
+}
+.f1{
+    grid-area: area1;
+}
+.l2{
+    grid-area: area2;
+}
+.p2{
+    grid-area: area2;
+}
+.f2{
+    grid-area: area2;
+}
+.l3{
+    grid-area: area3;
+}
+.p3{
+    grid-area: area3;
+}
+.f3{
+    grid-area: area3;
+}
+.l4{
+    grid-area: area4;
+}
+.p4{
+    grid-area: area4;
+}
+.l5{
+    grid-area: area5;
+}
+.p5{
+    grid-area: area5;
+}
+.p6{
+    grid-area: area6
+}
+.p7{
+    grid-area: area7
+}
+.p8{
+    grid-area: area8
+}
+.grilla-logo{
+    padding: 5px;
+    gap: 5px;
+}
+.grilla-logo img{
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+/*grilla producto*/
+.grilla-productos{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'area1 area2 area3'
+    'area4 area5 area6'
+    'area7 none area8'
+    ;
+    background-color: #55e8c4;
+    align-content: center;
+}
+.grilla-producto{
+    padding: 5px;
+    gap: 5px;
+}
+.grilla-producto img{
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+/*grilla film*/
+.grilla-films{
+display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'area1 area2 area3';
+    background-color: #48cc51;
+    align-content: center;
+}
+.grilla-film img {
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    object-fit: cover;
+    width: 100%;
 
+}
+.grilla-film{
+    padding: 5px;
+    gap: 5px;
+}
 /* html experiencia*/
 
 .about,.experiencia, .educacion{
-    display: inline-block;
+    display: flex;
     width: 100%;
     background-color:#718c76;
     text-align: center;
+    justify-content: space-between;
 }
 .sobre-mi,.experiencia-lista,.educacion-lista  {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 20px;
-    text-align: center;
+    gap:20px
 }
 .sobre-mi img, .experiencia-lista img, .educacion-lista img {
-    float: left;
     width: 40%;
     height: 500px;
     object-fit: cover;
-    
 }
 .sobre-mi div,.experiencia-lista div, .educacion-lista div{
-    display: inline-block;
+    flex-direction: column;
     width: 40%;
+    text-align: center;
+    align-items: center;
 }
 .sobre-mi div h2, .experiencia-lista div h2, .educacion-lista div h2{
     text-align: center;
